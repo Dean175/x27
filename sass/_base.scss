@@ -1,0 +1,30 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: arial;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*===================================================*/
+/*                     Font Face                     */
+/*===================================================*/
+
+@font-face {
+    font-family: 'adelle_sans_sagebold';
+    src: url('../fonts/adellesanssage-bold-webfont.eot');
+    src: url('../fonts/adellesanssage-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/adellesanssage-bold-webfont.woff2') format('woff2'),
+         url('../fonts/adellesanssage-bold-webfont.woff') format('woff'),
+         url('../fonts/adellesanssage-bold-webfont.ttf') format('truetype'),
+         url('../fonts/adellesanssage-bold-webfont.svg#adelle_sans_sagebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

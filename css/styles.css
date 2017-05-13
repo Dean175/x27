@@ -1,0 +1,102 @@
+/* line 1, ../sass/_base.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 9, ../sass/_base.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*===================================================*/
+/*                     Font Face                     */
+/*===================================================*/
+@font-face {
+  font-family: 'adelle_sans_sagebold';
+  src: url("../fonts/adellesanssage-bold-webfont.eot");
+  src: url("../fonts/adellesanssage-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/adellesanssage-bold-webfont.woff2") format("woff2"), url("../fonts/adellesanssage-bold-webfont.woff") format("woff"), url("../fonts/adellesanssage-bold-webfont.ttf") format("truetype"), url("../fonts/adellesanssage-bold-webfont.svg#adelle_sans_sagebold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 1, ../sass/_main.scss */
+.wrapper {
+  padding-left: 0;
+}
+
+/* line 7, ../sass/_main.scss */
+#grid-content .news-adherent-block {
+  background-color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 13, ../sass/_main.scss */
+#grid-content .news-adherent {
+  padding: 10px;
+}
+/* line 18, ../sass/_main.scss */
+#grid-content .blocks-footer .button {
+  float: left;
+  width: 50%;
+}
+/* line 23, ../sass/_main.scss */
+#grid-content .blocks-footer .navigation {
+  float: left;
+  width: 50%;
+  text-align: right;
+}
+
+/* line 2, ../sass/partials/_menu.scss */
+.menu-wrap {
+  max-width: 115px;
+}
+
+/* line 7, ../sass/partials/_menu.scss */
+#main-menu {
+  background-color: #25567F;
+  height: calc(100vh - 100px);
+  width: 100px;
+  margin-top: 100px;
+}
+/* line 12, ../sass/partials/_menu.scss */
+#main-menu ul {
+  padding: 0;
+}
+/* line 14, ../sass/partials/_menu.scss */
+#main-menu ul li {
+  list-style: none;
+}
+/* line 17, ../sass/partials/_menu.scss */
+#main-menu ul li a {
+  text-align: center;
+  display: block;
+}
+/* line 20, ../sass/partials/_menu.scss */
+#main-menu ul li a .menu-icon {
+  display: block;
+  font-size: 40px;
+  color: #F2B10B;
+  padding: 20px 10px 0px 10px;
+}
+/* line 26, ../sass/partials/_menu.scss */
+#main-menu ul li a .menu-label {
+  display: block;
+  text-transform: uppercase;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #3D739C;
+  font-size: 12px;
+  line-height: 15px;
+}
+/* line 37, ../sass/partials/_menu.scss */
+#main-menu ul li.menu-burger {
+  background-color: #023864;
+}
+/* line 39, ../sass/partials/_menu.scss */
+#main-menu ul li.menu-burger a {
+  padding-bottom: 20px;
+}

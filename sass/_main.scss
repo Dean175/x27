@@ -1,0 +1,29 @@
+.wrapper {
+	padding-left: 0;
+}
+
+#grid-content {
+
+	.news-adherent-block {
+		background-color: $white;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.news-adherent {
+		padding: 10px;
+	}
+
+	.blocks-footer {
+		.button {
+			float: left;
+			width: 50%;
+		}
+
+		.navigation {
+			float: left;
+			width: 50%;
+			text-align: right;
+		}
+	}
+}

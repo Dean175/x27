@@ -1,4 +1,3 @@
-/* line 1, ../sass/_base.scss */
 body {
   padding: 0;
   margin: 0;
@@ -7,7 +6,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 9, ../sass/_base.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -23,66 +21,117 @@ img {
   font-weight: normal;
   font-style: normal;
 }
-/* line 1, ../sass/_main.scss */
-.wrapper {
-  padding-left: 0;
+.wrapper .main {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.wrapper .main:before, .wrapper .main:after {
+  content: " ";
+  display: table;
+}
+.wrapper .main:after {
+  clear: both;
+}
+.wrapper .main .menu-wrap {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .wrapper .main .menu-wrap {
+    float: left;
+    width: 8.33333%;
+  }
+}
+.wrapper .main .content-wrap {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .wrapper .main .content-wrap {
+    float: left;
+    width: 91.66667%;
+  }
 }
 
-/* line 7, ../sass/_main.scss */
+.sections-wrap {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.sections-wrap:before, .sections-wrap:after {
+  content: " ";
+  display: table;
+}
+.sections-wrap:after {
+  clear: both;
+}
+.sections-wrap .section-1 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .sections-wrap .section-1 {
+    float: left;
+    width: 50%;
+  }
+}
+.sections-wrap .section-2 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .sections-wrap .section-2 {
+    float: left;
+    width: 50%;
+  }
+}
+
 #grid-content .news-adherent-block {
   background-color: #fff;
   padding-left: 0;
   padding-right: 0;
 }
-/* line 13, ../sass/_main.scss */
 #grid-content .news-adherent {
   padding: 10px;
 }
-/* line 18, ../sass/_main.scss */
 #grid-content .blocks-footer .button {
   float: left;
   width: 50%;
 }
-/* line 23, ../sass/_main.scss */
 #grid-content .blocks-footer .navigation {
   float: left;
   width: 50%;
   text-align: right;
 }
 
-/* line 2, ../sass/partials/_menu.scss */
-.menu-wrap {
-  max-width: 115px;
-}
-
-/* line 7, ../sass/partials/_menu.scss */
 #main-menu {
   background-color: #25567F;
   height: calc(100vh - 100px);
-  width: 100px;
   margin-top: 100px;
 }
-/* line 12, ../sass/partials/_menu.scss */
 #main-menu ul {
   padding: 0;
 }
-/* line 14, ../sass/partials/_menu.scss */
 #main-menu ul li {
   list-style: none;
 }
-/* line 17, ../sass/partials/_menu.scss */
 #main-menu ul li a {
   text-align: center;
   display: block;
 }
-/* line 20, ../sass/partials/_menu.scss */
 #main-menu ul li a .menu-icon {
   display: block;
   font-size: 40px;
   color: #F2B10B;
   padding: 20px 10px 0px 10px;
 }
-/* line 26, ../sass/partials/_menu.scss */
 #main-menu ul li a .menu-label {
   display: block;
   text-transform: uppercase;
@@ -92,11 +141,9 @@ img {
   font-size: 12px;
   line-height: 15px;
 }
-/* line 37, ../sass/partials/_menu.scss */
 #main-menu ul li.menu-burger {
   background-color: #023864;
 }
-/* line 39, ../sass/partials/_menu.scss */
 #main-menu ul li.menu-burger a {
   padding-bottom: 20px;
 }

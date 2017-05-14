@@ -1,5 +1,28 @@
 .wrapper {
-	padding-left: 0;
+	.main {
+		@include make-row();
+
+		.menu-wrap {
+			//max-width: 115px;
+			@include make-sm-column(1);
+		}
+
+		.content-wrap {
+			@include make-sm-column(11);
+		}
+	}
+}
+
+.sections-wrap {
+	@include make-row();
+
+	.section-1 {
+		@include make-sm-column(6);
+	}
+
+	.section-2 {
+		@include make-sm-column(6);
+	}
 }
 
 #grid-content {

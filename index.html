@@ -159,26 +159,31 @@
 
 								<!-- Accords -->
 								<div class="accords">
-									<h1>Accords</h1>
+									<h1>Accords<span class="badge">2</span></h1>
 
-									<div class="form-group">
-									  <select class="form-control" id="sel1">
-									    <option>Date Decroissante</option>
-									  </select>
+									<div class="dropdown">
+									  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Date Decroissante
+									  <span class="glyphicon glyphicon-menu-down"></span></button>
+									  <ul class="dropdown-menu">
+									    <li><a href="#">Accord 1</a></li>
+									  </ul>
 									</div>
 
-									<ul>
-										<li>Air Liquide <span>Ajout le 7 fev. 2015</span></li>
-										<li>Air Liquide <span>Ajout le 7 fev. 2015</span></li>
-										<li>Air Liquide <span>Ajout le 7 fev. 2015</span></li>
-										<li>Air Liquide <span>Ajout le 7 fev. 2015</span></li>
+									<ul class="listes">
+										<li><span>Air Liquide <span class="small">Ajout le 7 fev. 2015</span></span></li>
+										<li><span>Air Liquide <span class="small">Ajout le 7 fev. 2015</span></span></li>
+										<li><span>Air Liquide <span class="small">Ajout le 7 fev. 2015</span></span></li>
+										<li><span>Air Liquide <span class="small">Ajout le 7 fev. 2015</span></span></li>
+
+										<li><span>Air Liquide <span class="small">Ajout le 7 fev. 2015</span></span></li>
+										<li><span>Air Liquide <span class="small">Ajout le 7 fev. 2015</span></span></li>
 									</ul>
 									
 									<form class="form-inline">
 									  <div class="form-group">
 									    <label for="accord">Rechercher un accord commercial:</label>
 									    <input type="text" class="form-control" id="accord">
-									    <button type="submit" class="btn btn-default">Submit</button>
+									    <button type="submit" class="btn btn-default">Search</button>
 									  </div>
 									</form>
 								</div>
@@ -270,6 +275,12 @@
 			</div>
 		</div>
 	</div><!-- container-fluid -->
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- bootstrap JavaScript -->
+	<script src="bootstrap/javascripts/bootstrap.min.js"></script>
 
 </body>
 </html>

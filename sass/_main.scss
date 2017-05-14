@@ -46,7 +46,6 @@
 	}
 	.news-title {
 		@include block_title($block-title-color);
-		margin-top: 0;
 	}
 	.news-item {
 		margin: 20px 0;
@@ -139,5 +138,65 @@
 	.sub-section-2 {
 		@include make-sm-column(6);
 		@include no-gutterP;
+	}
+}
+
+//==========================================
+//              Accords BLOCK
+//==========================================
+.accords {
+	background-color: $dark-blue;
+    padding: 25px;
+	h1 {
+		@include block_title($white);
+		.badge {
+			@include badge_style($badge-contrats-color);
+		}
+	}
+
+	.dropdown {
+		margin-bottom: 10px;
+		button {
+		    font-size: 11px;
+		    line-height: 15px;
+		    padding: 2px 3px;
+		    background-color: #44719a;
+		    border-radius: 3px;
+	        color: $white;
+		    text-transform: uppercase;
+		    border: none;
+		}
+	}
+
+	.listes {
+		padding: 0 0 0 15px;
+	    height: 70px;
+	    overflow: scroll;
+	    width: 100%;
+		li {
+			color: #6be0ce;
+			font-size: 12px;
+			span {
+				color: $white;
+				&.small {
+					color: #44719a;
+					font-size: 10px;
+				}
+			}
+		}
+	}
+
+	.form-group {
+		label {
+			font-size: 12px;
+			color: $white;
+		}
+		input {
+			@include input_style;
+			margin-right: 10px;
+		}
+		button {
+			@include button_tout_voir($badge-contrats-color, $dark-blue);
+		}
 	}
 }

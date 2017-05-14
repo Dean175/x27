@@ -385,3 +385,18 @@
     font-size: 20px;
   }
 }
+
+@mixin block_title($color) {
+  color: $color;
+}
+
+// Removing gutters from row
+@mixin no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@mixin no-gutterP {
+  padding-right: 0;
+  padding-left: 0;
+}

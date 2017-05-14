@@ -25,28 +25,79 @@
 	}
 }
 
-#grid-content {
+//========================================
+//===== News ================
 
-	.news-adherent-block {
-		background-color: $white;
-		padding-left: 0;
-		padding-right: 0;
+.news {
+	.news-img {
+		width: 100%;
+	}
+	.news-title {
+		color: $block-title-color;
+		margin-top: 0;
+	}
+	.news-item {
+		margin: 20px 0;
+		.news-badge {
+			.label {
+				&.promos {
+					@include badge($badge-promos-color);
+				}
+				&.vins {
+					@include badge($badge-vins-color);
+				}
+			}
+		}
+		.news-content {
+			@include make-row();
+			.details {
+				@include make-sm-column(10);
+				h2 {
+					font-size: 20px;
+					font-weight: bold;
+					color: $darker-blue;
+				}
+				p {
+					color: $block-title-color;
+				}
+			}
+			.image {
+				@include make-sm-column(2);
+				div {
+					width: 52px;
+					height: 74px;
+					margin: auto;
+					margin-top: 25px;
+				}
+			}
+		}
+
 	}
 
-	.news-adherent {
-		padding: 10px;
+	.news-inner {
+		padding: 15px 20px;
+		background-color: $white;
 	}
 
 	.blocks-footer {
 		.button {
 			float: left;
 			width: 50%;
+			a {
+				@include button_tout_voir($button-news-color);
+			}
 		}
 
 		.navigation {
 			float: left;
 			width: 50%;
 			text-align: right;
+			div {
+				line-height: 32px;
+			}
+			span {
+				@include navigation($grey);
+			}
 		}
 	}
 }

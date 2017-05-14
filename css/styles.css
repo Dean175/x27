@@ -93,22 +93,111 @@ img {
   }
 }
 
-#grid-content .news-adherent-block {
+.news .news-img {
+  width: 100%;
+}
+.news .news-title {
+  color: #a5bccc;
+  margin-top: 0;
+}
+.news .news-item {
+  margin: 20px 0;
+}
+.news .news-item .news-badge .label.promos {
+  color: #f36a58;
+  background-color: transparent;
+  border-color: #f36a58;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.news .news-item .news-badge .label.vins {
+  color: #986bbe;
+  background-color: transparent;
+  border-color: #986bbe;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.news .news-item .news-content {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.news .news-item .news-content:before, .news .news-item .news-content:after {
+  content: " ";
+  display: table;
+}
+.news .news-item .news-content:after {
+  clear: both;
+}
+.news .news-item .news-content .details {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .news .news-item .news-content .details {
+    float: left;
+    width: 83.33333%;
+  }
+}
+.news .news-item .news-content .details h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222325;
+}
+.news .news-item .news-content .details p {
+  color: #a5bccc;
+}
+.news .news-item .news-content .image {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .news .news-item .news-content .image {
+    float: left;
+    width: 16.66667%;
+  }
+}
+.news .news-item .news-content .image div {
+  width: 52px;
+  height: 74px;
+  margin: auto;
+  margin-top: 25px;
+}
+.news .news-inner {
+  padding: 15px 20px;
   background-color: #fff;
-  padding-left: 0;
-  padding-right: 0;
 }
-#grid-content .news-adherent {
-  padding: 10px;
-}
-#grid-content .blocks-footer .button {
+.news .blocks-footer .button {
   float: left;
   width: 50%;
 }
-#grid-content .blocks-footer .navigation {
+.news .blocks-footer .button a {
+  background-color: #15262e;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 3px;
+}
+.news .blocks-footer .navigation {
   float: left;
   width: 50%;
   text-align: right;
+}
+.news .blocks-footer .navigation div {
+  line-height: 32px;
+}
+.news .blocks-footer .navigation span a {
+  color: #dedee0;
+  font-size: 20px;
 }
 
 #main-menu {

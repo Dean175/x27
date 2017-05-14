@@ -354,3 +354,34 @@
   background: url('../images/sprites/#{$img}.png') 0 0 no-repeat transparent;
   @include background-size($width $height);
 }
+
+
+//---------------------------------------------------------------
+//----------  X27 Mixins  ---------------------------------------
+
+@mixin badge($color) {
+  color: $color;
+  background-color: transparent;
+  border-color: $color;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+@mixin button_tout_voir($bgcolor) {
+  background-color: $bgcolor;
+  text-transform: uppercase;
+  color: $white;
+  border: none;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 3px;
+}
+
+@mixin navigation($color) {
+  a {
+    color: $color;
+    font-size: 20px;
+  }
+}

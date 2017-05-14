@@ -121,6 +121,15 @@ img {
   text-transform: uppercase;
   display: inline-block;
 }
+.news .news-item .news-badge .label.contrats {
+  color: #6be0ce;
+  background-color: transparent;
+  border-color: #6be0ce;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  display: inline-block;
+}
 .news .news-item .news-content {
   margin-left: -15px;
   margin-right: -15px;
@@ -172,6 +181,9 @@ img {
 }
 .news .news-inner {
   padding: 15px 20px;
+  background-color: #f6f7f9;
+}
+.news.news-adherent-block .news-inner {
   background-color: #fff;
 }
 .news .blocks-footer .button {

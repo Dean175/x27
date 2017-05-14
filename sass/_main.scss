@@ -46,6 +46,9 @@
 				&.vins {
 					@include badge($badge-vins-color);
 				}
+				&.contrats {
+					@include badge($badge-contrats-color);
+				}
 			}
 		}
 		.news-content {
@@ -76,7 +79,13 @@
 
 	.news-inner {
 		padding: 15px 20px;
-		background-color: $white;
+		background-color: $lighter-blue;
+	}
+
+	&.news-adherent-block {
+		.news-inner {
+			background-color: $white;
+		}
 	}
 
 	.blocks-footer {

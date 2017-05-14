@@ -222,6 +222,7 @@
 			&.select {
 				@include input_style(100%);
 				text-transform: initial;
+				text-align: left;
 			}
 			&.search {
 				@include button_tout_voir($badge-contrats-color, $dark-blue);

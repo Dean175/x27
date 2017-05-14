@@ -363,6 +363,7 @@ img {
   border-radius: 2px;
   color: white;
   text-transform: initial;
+  text-align: left;
 }
 .client-nationaux .dropdown button.search {
   background-color: #6be0ce;

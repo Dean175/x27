@@ -146,7 +146,7 @@
 //==========================================
 .accords {
 	background-color: $dark-blue;
-    padding: 25px;
+    padding: 33px 25px;
 	h1 {
 		@include block_title($white);
 		.badge {
@@ -171,7 +171,7 @@
 	.listes {
 		padding: 0 0 0 15px;
 	    height: 70px;
-	    overflow: scroll;
+	    overflow-y: scroll;
 	    width: 100%;
 		li {
 			color: #6be0ce;
@@ -192,11 +192,54 @@
 			color: $white;
 		}
 		input {
-			@include input_style;
+			@include input_style(60%);
 			margin-right: 10px;
 		}
 		button {
 			@include button_tout_voir($badge-contrats-color, $dark-blue);
 		}
 	}
+}
+
+//==========================================
+//          Client nationaux BLOCK
+//==========================================
+
+.client-nationaux {
+	padding: 28px 25px;
+	.form-group {
+		width: 100%;
+		p {
+			margin: 0;
+			text-transform: uppercase;
+		}
+	}
+	.dropdown {
+		float: left;
+		width: 60%;
+		margin-right: 10px;
+		button {
+			&.select {
+				@include input_style(100%);
+				text-transform: initial;
+			}
+			&.search {
+				@include button_tout_voir($badge-contrats-color, $dark-blue);
+			}
+		}
+	}
+	.button-search {
+		float: left;
+		width: 30%;
+	}
+	p {
+		color: $white;
+	}
+}
+
+//==========================================
+//          Banner BLOCK
+//==========================================
+.banner {
+	height: 272px;
 }

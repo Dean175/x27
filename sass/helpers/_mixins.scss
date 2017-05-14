@@ -405,10 +405,10 @@
 
 // form inputs, buttons
 
-@mixin input_style {
+@mixin input_style($width:auto) {
   background-color: #44719a;
   border: none;
-  width: 60%;
+  width: $width;
   height: 30px;
   border-radius: 2px;
   color: white;

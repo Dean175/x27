@@ -1,0 +1,31 @@
+//==========================================
+//               SECTIONS
+//==========================================
+
+.sections-wrap {
+	@include make-row(0);
+
+	.section-1 {
+		@include make-sm-column(6, 0);
+	}
+
+	.section-2 {
+		@include make-sm-column(6, 0);
+	}
+}
+
+//==========================================
+//               SUB SECTIONS
+//==========================================
+
+.sub-sections-wrap {
+	@include make-row(0);
+
+	.sub-section-1 {
+		@include make-sm-column(6, 0);
+	}
+
+	.sub-section-2 {
+		@include make-sm-column(6, 0);
+	}
+}

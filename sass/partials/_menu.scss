@@ -1,11 +1,6 @@
 #main-menu {
 	background-color: $bleu;
-	height: calc(100vh - 100px);
-	//width: 100px;
-	margin-top: 100px;
-	position: fixed;
-    width: 100px;
-	ul {
+	ul.principal-nav {
 		padding: 0;
 		li {
 			list-style: none;
@@ -32,8 +27,32 @@
 
 			&.menu-burger {
 				background-color: $dark-blue;
+
 				a {
 					padding-bottom: 20px;
+				}
+
+				ul#sub-menu-burger {
+					&.in {
+						background-color: $sky-blue;
+						bottom: 0;
+						left: 100px;
+						position: absolute;
+						top: -100px;
+						width: 300px;
+						padding-top: 45px;
+						padding-left: 27px;
+					}
+
+					li {
+						list-style: circle;
+						color: #b3bfd7;
+						margin-bottom: 28px;
+						a {
+							padding-bottom: 0;
+							text-align: left;
+						}
+					}				
 				}
 			}
 		}
